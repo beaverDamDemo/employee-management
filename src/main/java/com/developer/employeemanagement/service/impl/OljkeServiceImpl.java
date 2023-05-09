@@ -3,10 +3,11 @@ package com.developer.employeemanagement.service.impl;
 import com.developer.employeemanagement.entity.OljkeEntity;
 import com.developer.employeemanagement.repository.OljkeRepository;
 import com.developer.employeemanagement.service.OljkeService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class OljkeServiceImpl implements OljkeService {
 
     private final OljkeRepository oljkeRepository;
