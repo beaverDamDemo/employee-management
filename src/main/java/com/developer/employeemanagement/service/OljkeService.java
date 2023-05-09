@@ -1,5 +1,7 @@
 package com.developer.employeemanagement.service;
 
+import com.developer.employeemanagement.dto.request.OljkeRequest;
+import com.developer.employeemanagement.dto.response.OljkeResponse;
 import com.developer.employeemanagement.entity.OljkeEntity;
 
 import java.util.List;
@@ -12,4 +14,7 @@ public interface OljkeService {
     OljkeEntity updateOljka(OljkeEntity oljka);
     void deleteOljka(Long id);
 
+    OljkeResponse saveOljka(OljkeRequest oljkaRequest);
+
+    OljkeResponse updateOljka(OljkeRequest oljkaRequest, Long id);
 }
